@@ -4,8 +4,7 @@ function task_RE_3() {
 
     function checkString(str) {
 
-        let regExp = /^[\d\s\ta-zA-Zа-яА-Я]+$/
-
+        let regExp = /^[\da-zа-я]+$/gi
         let chk = regExp.test(str);
 
         return chk;
