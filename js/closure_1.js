@@ -9,7 +9,7 @@
 
 function task_closure_1() {
 
-    function createLink(cathegory) {
+    function getLink(cathegory) {
         return function (code) {
             return `http://myshop.ru/${cathegory}/${code}`;
         };  
