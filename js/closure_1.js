@@ -14,6 +14,7 @@ function task_closure_1() {
             return `http://myshop.ru/${cathegory}/${code}`;
         };  
     };
+    
 
     let createPCLink = getLink('ПК(PC)');
     let createNotebooksLink = getLink('Ноутбуки(Notebooks)');
