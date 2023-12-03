@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задача №2</title>
+</head>
+<body>
+    <form>
+        <input type="button" value="Information" id="button">
+        
+        <p>
+            <label for="resol_width">Разрешение по ширине, px</label>
+            <input type="text" id="resol_width">
+        </p>
+        <p>
+            <label for="resol_height">Разрешение по высоте, px</label>
+            <input type="text" id="resol_height">
+        </p>
+        <p>
+            <label for="width_field">Ширина рабочей области, px</label>
+            <input type="text" id="width_field">
+        </p>
+        <p>
+            <label for="hight_field">Высота рабочей области, px</label>
+            <input type="text" id="hight_field">
+        </p>
+    </form>
+    
+    <a href="BOM_3.html">Next Page</a>
+
+    <p>
+        <a href="#" onclick="window.history.back()" >Back</a>
+    </p>
+
+    <script>
+        document.querySelector("#button").onclick = function () {
+            document.querySelector("#resol_width").value = screen.width;
+            document.querySelector("#resol_height").value = screen.height;
+            document.querySelector("#width_field").value = screen.availWidth
+            document.querySelector("#hight_field").value = screen.availHeight
+        }
+    </script>
+</body>
+</html>

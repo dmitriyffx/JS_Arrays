@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задача №3</title>
+</head>
+<body>
+    
+    <a href="10-1.html" onclick="event.preventDefault()">Link</a>
+
+    <p>
+        <label for="nachisleno">Начислено</label>
+        <input type="text" id="nachisleno">
+    </p>
+
+    <p>
+        <label for="uderzhano">Удержано</label>
+        <input type="text" id="uderzhano">
+    </p>
+
+    <p>
+        <label for="itogo">Итого </label>
+        <input type="text" id="itogo">
+    </p>
+        
+    <input type="button" value="Подсчитать" id="calculate">
+
+    <p>
+        <a href="#" onclick="window.history.back()" >Back</a>
+    </p>
+
+    <script>
+        document.querySelector("#calculate").onclick = function () {
+            let field_1 = document.querySelector("#nachisleno").value;
+
+            let field_2 = document.querySelector("#uderzhano").value;
+
+            if (/^\d+$/.test(field_1) && /^\d+$/.test(field_2)) {
+                document.querySelector("#itogo").value = field_1 - field_2;
+            } else {
+                alert('Error Input!')
+            }
+        }
+    </script>
+    
+</body>
+</html>

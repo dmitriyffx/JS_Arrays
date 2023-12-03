@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задача №1</title>
+</head>
+<body>
+    <form>
+        <input type="button" value="Information about screen" id="button">
+        <p>
+            <textarea id="text"></textarea>
+            <style>
+                textarea {
+                    width: 250px;
+                    height: 100px;
+                    resize: none;
+                }
+            </style>
+        </p>
+    </form>
+    
+    <a href="BOM_2.html">Next Page</a>
+
+    <script>
+        document.querySelector('#button').onclick = function () {
+            document.querySelector('#text').value = navigator.appVersion;
+        }
+    </script>
+</body>
+</html>
