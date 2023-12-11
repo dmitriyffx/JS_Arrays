@@ -1,0 +1,9 @@
+.card-row {
+    display: flex;
+    gap: 70px;
+}
+
+.card-img {
+    height: 350px;
+    width: 150px;
+}
